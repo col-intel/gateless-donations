@@ -27,7 +27,7 @@ A zero-dependency donation widget for non-profit organizations that doesn't requ
 
 ## Quick Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tiagom87/gateless-donations)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/col-intel/gateless-donations)
 
 ## Local Development
 
