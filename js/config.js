@@ -47,7 +47,91 @@ const CONFIG = {
   defaultDelegation: "Sede",
   delegations: {
     "Sede": {
-      iban: "PT50 0036 0344 9910 0014 366 77",
+      iban: "PT50 0036 0344 99100003328 17",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
+      }
+    },
+    "Azeitão": {
+      iban: "PT50 0036 0344 99100015579 27",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
+      }
+    },
+    "Cascais": {
+      iban: "PT50 0036 0344 99100014366 77",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
+      }
+    },
+    "Coimbra": {
+      iban: "PT50 0036 0344 99100014374 53",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
+      }
+    },
+    "Paredes": {
+      iban: "PT50 0036 0344 99100022328 53",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
+      }
+    },
+    "Albufeira": {
+      iban: "PT50 0036 0344 99100015587 03",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
+      }
+    },
+    "Setúbal": {
+      iban: "PT50 0036 0344 99100008590 42",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
+      }
+    },
+    "Porto": {
+      iban: "PT50 0036 0344 99100004128 42",
       swift: "MPIOPTPLXXX",
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
@@ -59,23 +143,39 @@ const CONFIG = {
       }
     },
     "Lisboa": {
-      iban: "PT50 0036 0344 9910 0014 366 79",
+      iban: "PT50 0036 0344 99100014358 04",
       swift: "MPIOPTPLXXX",
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
       },
       paymentUrls: {
-        mbway: "https://pay.example.com/lisboa/mbway",
-        multibanco: "https://pay.example.com/lisboa/multibanco"
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
       }
     },
-    "Porto": {
-      iban: "PT50 0036 0344 9910 0014 366 80",
+    "Madeira": {
+      iban: "PT50 0036 0344 99100006255 63",
       swift: "MPIOPTPLXXX",
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
+      }
+    },
+    "Figueira da Foz": {
+      iban: "PT50 0036 0344 99100014382 29",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://pay.example.com/sede/mbway",
+        multibanco: "https://pay.example.com/sede/multibanco"
       }
     }
   },
