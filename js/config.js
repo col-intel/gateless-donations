@@ -1,16 +1,12 @@
 const CONFIG = {
   paymentMethods: {
-    mbway: {
-      name: "MB Way",
-      icon: "credit-card"
-    },
-    multibanco: {
-      name: "Multibanco",
-      icon: "landmark"
-    },
     transferencia: {
       name: "Transferência Bancária",
       icon: "building-2"
+    },
+    solidario: {
+      name: "Ser Solidário",
+      icon: "heart-handshake"
     }
   },
   copy: {
@@ -23,6 +19,20 @@ const CONFIG = {
         title: "Muito obrigado pela intenção :)",
         subtitle: "Siga as instruções abaixo para concluir a sua doação",
         instructions: "Transferir o montante desejado para a seguinte conta bancária",
+        receipt: "Caso necessite de um recibo com o comprovativo do donativo deve enviar um email para",
+        receiptDetails: "com o nome, morada, NIF e contacto para o envio do recibo."
+      },
+      solidario: {
+        title: "Muito obrigado pela intenção :)",
+        subtitle: "Siga as instruções abaixo para concluir a sua doação",
+        instructions: "Para fazer um donativo através do Ser Solidário:",
+        steps: [
+          "1. Aceda ao seu Homebanking",
+          "2. Procure a opção 'Ser Solidário' ou 'Donativos'",
+          "3. Selecione 'Centro de Apoio ao Sem Abrigo' da lista de instituições",
+          "4. Indique o montante que deseja doar",
+          "5. Confirme a operação"
+        ],
         receipt: "Caso necessite de um recibo com o comprovativo do donativo deve enviar um email para",
         receiptDetails: "com o nome, morada, NIF e contacto para o envio do recibo."
       }
@@ -52,10 +62,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/DAYKJHFIPb",
-        multibanco: "https://gateway.ifthenpay.com/url/DAYKJHFIPb"
       }
     },
     "Albufeira": {
@@ -64,10 +70,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/r43oTqYQk0",
-        multibanco: "https://gateway.ifthenpay.com/url/r43oTqYQk0"
       }
     },
     "Azeitão": {
@@ -76,10 +78,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/7D5FwTUs8K",
-        multibanco: "https://gateway.ifthenpay.com/url/7D5FwTUs8K"
       }
     },
     "Cascais": {
@@ -88,10 +86,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/pY2IRtShwe",
-        multibanco: "https://gateway.ifthenpay.com/url/pY2IRtShwe"
       }
     },
     "Coimbra": {
@@ -100,10 +94,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/h5VxYiPbDo",
-        multibanco: "https://gateway.ifthenpay.com/url/h5VxYiPbDo"
       }
     },
     "Figueira da Foz": {
@@ -112,10 +102,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/OBuiUpnAsk",
-        multibanco: "https://gateway.ifthenpay.com/url/OBuiUpnAsk"
       }
     },
     "Lisboa": {
@@ -124,10 +110,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/yEZNLvYXus",
-        multibanco: "https://gateway.ifthenpay.com/url/yEZNLvYXus"
       }
     },
     "Madeira": {
@@ -136,10 +118,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/plnu45CI0t",
-        multibanco: "https://gateway.ifthenpay.com/url/plnu45CI0t"
       }
     },
     "Paredes": {
@@ -148,10 +126,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/L5W7B4bl0D",
-        multibanco: "https://gateway.ifthenpay.com/url/L5W7B4bl0D"
       }
     },
     "Porto": {
@@ -160,10 +134,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/I17C92MaUd",
-        multibanco: "https://gateway.ifthenpay.com/url/I17C92MaUd"
       }
     },
     "Setúbal": {
@@ -172,10 +142,6 @@ const CONFIG = {
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://gateway.ifthenpay.com/url/Vlp1SvrG8c",
-        multibanco: "https://gateway.ifthenpay.com/url/Vlp1SvrG8c"
       }
     }
   },

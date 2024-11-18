@@ -9,17 +9,21 @@ function updateProgressBar() {
 
 function renderPaymentMethodStep() {
   const container = document.getElementById('step-container');
+  const allowedMethods = ['transferencia', 'solidario'];
+  
   container.innerHTML = `
     <h2 class="text-2xl font-semibold text-center mb-8">${CONFIG.copy.steps.payment.title}</h2>
     <div class="space-y-4">
-      ${Object.entries(CONFIG.paymentMethods).map(([key, method]) => `
-        <button
-          onclick="selectPaymentMethod('${key}')"
-          class="w-full p-4 text-left border rounded-lg hover:bg-gray-50 transition-colors flex justify-between items-center group"
-        >
-          <span class="text-lg font-medium">${method.name}</span>
-          <i data-lucide="${method.icon}" class="h-8 w-8 text-blue-900"></i>
-        </button>
+      ${Object.entries(CONFIG.paymentMethods)
+        .filter(([key]) => allowedMethods.includes(key))
+        .map(([key, method]) => `
+          <button
+            onclick="selectPaymentMethod('${key}')"
+            class="w-full p-4 text-left border rounded-lg hover:bg-gray-50 transition-colors flex justify-between items-center group"
+          >
+            <span class="text-lg font-medium">${method.name}</span>
+            <i data-lucide="${method.icon}" class="h-8 w-8 text-blue-900"></i>
+          </button>
       `).join('')}
     </div>
     
@@ -39,6 +43,38 @@ function renderPaymentMethodStep() {
             </div>
           `).join('')}
         </div>
+      </div>
+    </div>
+  `;
+  lucide.createIcons();
+}
+
+function renderSolidarioDetails() {
+  const container = document.getElementById('step-container');
+  const { copy } = CONFIG;
+
+  container.innerHTML = `
+    <div class="space-y-6">
+      <h2 class="text-2xl mb-12">${copy.steps.solidario.title}</h2>
+      <p class="text-xl mb-12">${copy.steps.solidario.subtitle}</p>
+      <p class="text-xl mb-8">${copy.steps.solidario.instructions}</p>
+
+      <div class="space-y-4 text-lg">
+        ${copy.steps.solidario.steps.map(step => `
+          <div class="p-4 bg-gray-50 rounded-lg">
+            ${step}
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="mt-12 space-y-2">
+        <p>
+          ${copy.steps.solidario.receipt}
+          <a href="mailto:${CONFIG.email.receipt.address}" class="text-blue-600 hover:underline">
+            ${CONFIG.email.receipt.address}
+          </a>
+          ${copy.steps.solidario.receiptDetails}
+        </p>
       </div>
     </div>
   `;
@@ -137,9 +173,11 @@ function selectPaymentMethod(method) {
     updateProgressBar();
     renderTransferDetails();
     updateNavigation();
-  } else {
-    const paymentUrl = CONFIG.delegations[delegation].paymentUrls[method];
-    window.open(paymentUrl, '_blank');
+  } else if (method === 'solidario') {
+    currentStep = 2;
+    updateProgressBar();
+    renderSolidarioDetails();
+    updateNavigation();
   }
 }
 
