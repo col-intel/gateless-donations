@@ -54,56 +54,8 @@ const CONFIG = {
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
       },
       paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
-      }
-    },
-    "Azeitão": {
-      iban: "PT50 0036 0344 99100015579 27",
-      swift: "MPIOPTPLXXX",
-      bank: {
-        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
-        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
-      }
-    },
-    "Cascais": {
-      iban: "PT50 0036 0344 99100014366 77",
-      swift: "MPIOPTPLXXX",
-      bank: {
-        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
-        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
-      }
-    },
-    "Coimbra": {
-      iban: "PT50 0036 0344 99100014374 53",
-      swift: "MPIOPTPLXXX",
-      bank: {
-        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
-        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
-      }
-    },
-    "Paredes": {
-      iban: "PT50 0036 0344 99100022328 53",
-      swift: "MPIOPTPLXXX",
-      bank: {
-        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
-        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
+        mbway: "https://gateway.ifthenpay.com/url/DAYKJHFIPb",
+        multibanco: "https://gateway.ifthenpay.com/url/DAYKJHFIPb"
       }
     },
     "Albufeira": {
@@ -114,56 +66,44 @@ const CONFIG = {
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
       },
       paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
+        mbway: "https://gateway.ifthenpay.com/url/r43oTqYQk0",
+        multibanco: "https://gateway.ifthenpay.com/url/r43oTqYQk0"
       }
     },
-    "Setúbal": {
-      iban: "PT50 0036 0344 99100008590 42",
+    "Azeitão": {
+      iban: "PT50 0036 0344 99100015579 27",
       swift: "MPIOPTPLXXX",
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
       },
       paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
+        mbway: "https://gateway.ifthenpay.com/url/7D5FwTUs8K",
+        multibanco: "https://gateway.ifthenpay.com/url/7D5FwTUs8K"
       }
     },
-    "Porto": {
-      iban: "PT50 0036 0344 99100004128 42",
+    "Cascais": {
+      iban: "PT50 0036 0344 99100014366 77",
       swift: "MPIOPTPLXXX",
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
       },
       paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
+        mbway: "https://gateway.ifthenpay.com/url/pY2IRtShwe",
+        multibanco: "https://gateway.ifthenpay.com/url/pY2IRtShwe"
       }
     },
-    "Lisboa": {
-      iban: "PT50 0036 0344 99100014358 04",
+    "Coimbra": {
+      iban: "PT50 0036 0344 99100014374 53",
       swift: "MPIOPTPLXXX",
       bank: {
         name: "CAIXA ECONÓMICA MONTEPIO GERAL",
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
       },
       paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
-      }
-    },
-    "Madeira": {
-      iban: "PT50 0036 0344 99100006255 63",
-      swift: "MPIOPTPLXXX",
-      bank: {
-        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
-        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
-      },
-      paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
+        mbway: "https://gateway.ifthenpay.com/url/h5VxYiPbDo",
+        multibanco: "https://gateway.ifthenpay.com/url/h5VxYiPbDo"
       }
     },
     "Figueira da Foz": {
@@ -174,8 +114,68 @@ const CONFIG = {
         legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
       },
       paymentUrls: {
-        mbway: "https://pay.example.com/sede/mbway",
-        multibanco: "https://pay.example.com/sede/multibanco"
+        mbway: "https://gateway.ifthenpay.com/url/OBuiUpnAsk",
+        multibanco: "https://gateway.ifthenpay.com/url/OBuiUpnAsk"
+      }
+    },
+    "Lisboa": {
+      iban: "PT50 0036 0344 99100014358 04",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://gateway.ifthenpay.com/url/yEZNLvYXus",
+        multibanco: "https://gateway.ifthenpay.com/url/yEZNLvYXus"
+      }
+    },
+    "Madeira": {
+      iban: "PT50 0036 0344 99100006255 63",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://gateway.ifthenpay.com/url/plnu45CI0t",
+        multibanco: "https://gateway.ifthenpay.com/url/plnu45CI0t"
+      }
+    },
+    "Paredes": {
+      iban: "PT50 0036 0344 99100022328 53",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://gateway.ifthenpay.com/url/L5W7B4bl0D",
+        multibanco: "https://gateway.ifthenpay.com/url/L5W7B4bl0D"
+      }
+    },
+    "Porto": {
+      iban: "PT50 0036 0344 99100004128 42",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://gateway.ifthenpay.com/url/I17C92MaUd",
+        multibanco: "https://gateway.ifthenpay.com/url/I17C92MaUd"
+      }
+    },
+    "Setúbal": {
+      iban: "PT50 0036 0344 99100008590 42",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "https://gateway.ifthenpay.com/url/Vlp1SvrG8c",
+        multibanco: "https://gateway.ifthenpay.com/url/Vlp1SvrG8c"
       }
     }
   },

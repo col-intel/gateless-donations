@@ -172,7 +172,7 @@ function selectDelegation(delegation) {
     updateNavigation();
   } else {
     const paymentUrl = CONFIG.delegations[delegation].paymentUrls[selectedPaymentMethod];
-    window.location.href = paymentUrl;
+    window.open(paymentUrl, '_blank');
   }
 }
 

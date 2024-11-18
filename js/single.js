@@ -139,7 +139,7 @@ function selectPaymentMethod(method) {
     updateNavigation();
   } else {
     const paymentUrl = CONFIG.delegations[delegation].paymentUrls[method];
-    window.location.href = paymentUrl;
+    window.open(paymentUrl, '_blank');
   }
 }
 
