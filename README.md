@@ -41,7 +41,7 @@ Add this code but change the URL to include `/single.html`:
 ```html
 <iframe 
     src="https://coral-elephant.static.domains/single.html" 
-    style="width: 100%; height: 736px; border: none; outline: none;" 
+    style="width: 100%; height: 980px; border: none; outline: none;" 
     allowfullscreen>
 </iframe>
 ```
