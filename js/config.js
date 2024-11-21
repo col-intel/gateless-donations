@@ -82,6 +82,18 @@ const CONFIG = {
   },
   defaultDelegation: "Sede",
   delegations: {
+    "CP": {
+      iban: "PT50 0036 0344 99100004466 95",
+      swift: "MPIOPTPLXXX",
+      bank: {
+        name: "CAIXA ECONÓMICA MONTEPIO GERAL",
+        legal: "CAIXA ECONÓMICA BANCÁRIA, SA"
+      },
+      paymentUrls: {
+        mbway: "",
+        multibanco: ""
+      }
+    },
     "Sede": {
       iban: "PT50 0036 0344 99100003328 17",
       swift: "MPIOPTPLXXX",

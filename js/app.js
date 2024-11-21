@@ -52,7 +52,8 @@ function renderPaymentMethodStep() {
 function renderDelegationStep() {
   const container = document.getElementById('step-container');
   const availableDelegations = Object.entries(CONFIG.delegations)
-    .filter(([_, info]) => {
+    .filter(([name, info]) => {
+      if (name === "CP") return false;
       if (selectedPaymentMethod === 'transferencia') return true;
       return info.paymentUrls?.[selectedPaymentMethod];
     })
@@ -91,10 +92,10 @@ function renderTransferDetails() {
           ${copy.bankDetails.name.value}
         </div>
 
-        <div class="flex items-center gap-4">
-          <div>
-            <span class="font-bold">${copy.bankDetails.iban}:</span>
-            <span class="font-mono">${delegationData.iban}</span>
+        <div class="flex items-center gap-4 flex-wrap">
+          <div class="flex items-center">
+            <span class="font-bold whitespace-nowrap">${copy.bankDetails.iban}:</span>
+            <span class="font-mono ml-2">${delegationData.iban}</span>
           </div>
           <button
             onclick="copyToClipboard('${delegationData.iban}', 'iban')"
