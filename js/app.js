@@ -7,12 +7,16 @@ function updateProgressBar() {
   progress.style.width = `${(currentStep / 3) * 100}%`;
 }
 
+
 function renderPaymentMethodStep() {
   const container = document.getElementById('step-container');
+  const allowedMethods = ['transferencia', 'multibanco', 'mbway'];
   container.innerHTML = `
     <h2 class="text-2xl font-semibold text-center mb-8">${CONFIG.copy.steps.payment.title}</h2>
     <div class="space-y-4">
-      ${Object.entries(CONFIG.paymentMethods).map(([key, method]) => `
+      ${Object.entries(CONFIG.paymentMethods)
+        .filter(([key]) => allowedMethods.includes(key))
+        .map(([key, method]) => `
         <button
           onclick="selectPaymentMethod('${key}')"
           class="w-full p-4 text-left border rounded-lg hover:bg-gray-50 transition-colors flex justify-between items-center group"

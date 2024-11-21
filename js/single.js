@@ -9,7 +9,7 @@ function updateProgressBar() {
 
 function renderPaymentMethodStep() {
   const container = document.getElementById('step-container');
-  const allowedMethods = ['transferencia', 'solidario'];
+  const allowedMethods = ['transferencia', 'solidario', 'referencia'];
   
   container.innerHTML = `
     <h2 class="text-2xl font-semibold text-center mb-8">${CONFIG.copy.steps.payment.title}</h2>
@@ -74,6 +74,38 @@ function renderSolidarioDetails() {
             ${CONFIG.email.receipt.address}
           </a>
           ${copy.steps.solidario.receiptDetails}
+        </p>
+      </div>
+    </div>
+  `;
+  lucide.createIcons();
+}
+
+function renderReferenciaDetails() {
+  const container = document.getElementById('step-container');
+  const { copy } = CONFIG;
+
+  container.innerHTML = `
+    <div class="space-y-6">
+      <h2 class="text-2xl mb-12">${copy.steps.referencia.title}</h2>
+      <p class="text-xl mb-12">${copy.steps.referencia.subtitle}</p>
+      <p class="text-xl mb-8">${copy.steps.referencia.instructions}</p>
+
+      <div class="space-y-4 text-lg">
+        ${copy.steps.referencia.steps.map(step => `
+          <div class="p-4 bg-gray-50 rounded-lg">
+            ${step}
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="mt-12 space-y-2">
+        <p>
+          ${copy.steps.referencia.receipt}
+          <a href="mailto:${CONFIG.email.receipt.address}" class="text-blue-600 hover:underline">
+            ${CONFIG.email.receipt.address}
+          </a>
+          ${copy.steps.referencia.receiptDetails}
         </p>
       </div>
     </div>
@@ -177,6 +209,11 @@ function selectPaymentMethod(method) {
     currentStep = 2;
     updateProgressBar();
     renderSolidarioDetails();
+    updateNavigation();
+  } else if (method === 'referencia') {
+    currentStep = 2;
+    updateProgressBar();
+    renderReferenciaDetails();
     updateNavigation();
   }
 }
