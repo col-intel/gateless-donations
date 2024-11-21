@@ -29,7 +29,7 @@ const CONFIG = {
         steps: [
           "1. Aceda ao seu Homebanking",
           "2. Procure a opção 'Ser Solidário' ou 'Donativos'",
-          "3. Selecione 'Centro de Apoio ao Sem Abrigo' da lista de instituições",
+          "3. Selecione 'CASA' da lista de instituições",
           "4. Indique o montante que deseja doar",
           "5. Confirme a operação"
         ],
