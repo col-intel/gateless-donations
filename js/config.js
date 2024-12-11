@@ -91,7 +91,7 @@ const CONFIG = {
       },
       paymentUrls: {
         mbway: "",
-        multibanco: ""
+        multibanco: "https://gateway.ifthenpay.com/url/DAYKJHFIPb"
       }
     },
     "Sede": {

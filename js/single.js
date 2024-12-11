@@ -9,7 +9,7 @@ function updateProgressBar() {
 
 function renderPaymentMethodStep() {
   const container = document.getElementById('step-container');
-  const allowedMethods = ['transferencia', 'solidario', 'referencia'];
+  const allowedMethods = ['transferencia', 'solidario', 'referencia','multibanco'];
   
   container.innerHTML = `
     <h2 class="text-2xl font-semibold text-center mb-8">${CONFIG.copy.steps.payment.title}</h2>
@@ -215,6 +215,9 @@ function selectPaymentMethod(method) {
     updateProgressBar();
     renderReferenciaDetails();
     updateNavigation();
+  } else {
+    const paymentUrl = CONFIG.delegations[delegation].paymentUrls[selectedPaymentMethod];
+    window.open(paymentUrl, '_blank');
   }
 }
 
